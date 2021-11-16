@@ -1,0 +1,49 @@
+{
+  "vpc-provider:account=895246776674:filter.vpc-id=vpc-63b9a20a:region=eu-central-1:returnAsymmetricSubnets=true": {
+    "vpcId": "vpc-63b9a20a",
+    "vpcCidrBlock": "10.10.32.0/20",
+    "availabilityZones": [],
+    "subnetGroups": [
+      {
+        "name": "Public",
+        "type": "Public",
+        "subnets": [
+          {
+            "subnetId": "subnet-51f42839",
+            "cidr": "10.10.32.0/23",
+            "availabilityZone": "eu-central-1a",
+            "routeTableId": "rtb-7c7f8114"
+          },
+          {
+            "subnetId": "subnet-97a449ed",
+            "cidr": "10.10.34.0/23",
+            "availabilityZone": "eu-central-1b",
+            "routeTableId": "rtb-7c7f8114"
+          }
+        ]
+      },
+      {
+        "name": "Private",
+        "type": "Private",
+        "subnets": [
+          {
+            "subnetId": "subnet-80c5abe8",
+            "cidr": "10.10.36.0/23",
+            "availabilityZone": "eu-central-1a",
+            "routeTableId": "rtb-7795081f"
+          },
+          {
+            "subnetId": "subnet-4bcb7b31",
+            "cidr": "10.10.38.0/23",
+            "availabilityZone": "eu-central-1b",
+            "routeTableId": "rtb-7695081e"
+          }
+        ]
+      }
+    ]
+  },
+  "hosted-zone:account=895246776674:domainName=spotcap.com:region=eu-central-1": {
+    "Id": "/hostedzone/Z3MDJH6SZ08426",
+    "Name": "spotcap.com."
+  }
+}
